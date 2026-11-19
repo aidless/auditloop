@@ -34,8 +34,8 @@ HEADERS = ["年度", "营业收入", "应收账款", "毛利", "经营活动现�
 def run_cli(*args: str, cwd: Path | None = None) -> subprocess.CompletedProcess:
     """真跑命令行。
 
-    工作区根目录名里带字面反斜杠（`F:\\deepseek`），把仓库路径塞进 PYTHONPATH
-    会被冒号切成两段（`F` 与 `\\deepseek/...`），所以这里改用
+    工作区根目录名里带字面反斜杠（`X:\\name`），把仓库路径塞进 PYTHONPATH
+    会被冒号切成两段（`X` 与 `\\name/...`），所以这里改用
     `-c` + `sys.path.insert` 起子进程 —— cwd 才能自由落在 tmp_path 上。
     """
     code = (
