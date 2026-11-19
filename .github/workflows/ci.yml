@@ -31,3 +31,6 @@ jobs:
           code=$?
           set -e
           test "$code" -eq 1
+
+      - name: README 机检（数字漂移即 fail build）
+        run: python scripts/check_readme.py
