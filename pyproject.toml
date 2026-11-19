@@ -1,5 +1,5 @@
 [project]
-name = "auditloop"
+name = "auditloop-oss"
 version = "0.1.0"
 description = "给中小会计师事务所的审计底稿自动化：银行调节、账龄、收入截止，例外清单 + Excel 底稿"
 readme = "README.md"
